@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="jeremy.tinderruler.RulerActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <jeremy.tinderruler.MyCustomSurfaceView
+        android:id="@+id/id_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/id_button_measure"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:gravity="end"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:drawableEnd="@drawable/ruler"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:padding="4dp"
+            android:clickable="true">
+        </TextView>
+        <TextView android:id="@+id/id_button_game"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="bottom|center"
+            android:drawableStart="@drawable/football"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:padding="4dp"
+            android:clickable="true">
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

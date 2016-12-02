@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TinderRuler</string>
+
+    <string name="measure_button">Measure</string>
+    <string name="game_button">Game</string>
+    <string name="bg_text">tinder ruler</string>
+</resources>
